@@ -1,16 +1,6 @@
-from flask import Flask, jsonify, request
-import os
-from flask_cors import CORS
-from threading import Thread
+from fastapi import FastAPI
+app = FastAPI()
 
-app = Flask(__name__)
-
-CORS(app)
-
-@app.route('/')
-def hello_world():
-    return 'Hello from Koyeb'
-
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=8000)
+@app.get("/")
+def read_root():
+    return {"status": "running"}
