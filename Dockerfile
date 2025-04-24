@@ -12,4 +12,4 @@ COPY . .
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # Run the FastAPI app in background + start your bot
-CMD uvicorn app:app --host 0.0.0.0 --port 8000 & python3 bot/bot.py
+CMD uvicorn app:app --host 0.0.0.0 --port 8000 & python3 bot.py
