@@ -1,6 +1,4 @@
 pyrogram
 tgcrypto
-deep-translator
-openai-whisper
 fastapi
 uvicorn
